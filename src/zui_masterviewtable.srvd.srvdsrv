@@ -1,0 +1,5 @@
+@ObjectModel.leadingEntity.name: 'ZI_MasterViewTable_S'
+define service ZUI_MASTERVIEWTABLE {
+  expose ZI_MASTERVIEWTABLE_S as MasterViewTableAll;
+  expose ZI_MASTERVIEWTABLE as MasterViewTable;
+}

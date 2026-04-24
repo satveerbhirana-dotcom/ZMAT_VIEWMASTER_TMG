@@ -1,0 +1,41 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'MasterViewTable', 
+    typeNamePlural: 'MasterViewTables', 
+    title: {
+      type: #STANDARD, 
+      label: 'Master View Table', 
+      value: 'ViewCode'
+    }
+  }
+}
+annotate view ZI_MasterViewTable with
+{
+  @UI.identification: [ {
+    position: 1 ,
+    label: 'View Code'
+  } ]
+  @UI.lineItem: [ {
+    position: 1 ,
+    label: 'View Code'
+  } ]
+  @UI.facet: [ {
+    id: 'ZI_MasterViewTable', 
+    purpose: #STANDARD, 
+    type: #IDENTIFICATION_REFERENCE, 
+    label: 'Master View Table', 
+    position: 1 
+  } ]
+  ViewCode;
+  
+  @UI.identification: [ {
+    position: 2 , 
+    label: 'View Name'
+  } ]
+  @UI.lineItem: [ {
+    position: 2 , 
+    label: 'View Name'
+  } ]
+  ViewName;
+}
